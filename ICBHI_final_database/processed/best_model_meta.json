@@ -1,0 +1,10 @@
+{
+  "best_model": "C:\\Users\\tosaw\\Music\\PQ11\\ICBHI_final_database\\processed\\best_model.pt",
+  "label_map": {
+    "0": "normal",
+    "1": "crackles",
+    "2": "wheezes",
+    "3": "both"
+  },
+  "device": "cuda"
+}
