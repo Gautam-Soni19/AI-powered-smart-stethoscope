@@ -1,0 +1,25 @@
+{
+  "input_json": "C:\\Users\\tosaw\\Music\\PQ11\\ICBHI_final_database\\processed\\101_1b1_Al_sc_Meditron_segment_decision.json",
+  "wav": "C:\\Users\\tosaw\\Music\\PQ11\\ICBHI_final_database\\101_1b1_Al_sc_Meditron.wav",
+  "device": "cuda",
+  "segment_pred_counts": {
+    "normal": 7,
+    "crackles": 0,
+    "wheezes": 0,
+    "both": 0
+  },
+  "mean_prob_per_class": {
+    "normal": 0.6368757486343384,
+    "crackles": 0.33447474241256714,
+    "wheezes": 0.01896323636174202,
+    "both": 0.009686245582997799
+  },
+  "disease_scores": {
+    "Normal": 0.8729065120220184,
+    "Pneumonia": 0.033447474241256714,
+    "Asthma": 0.001896323636174202,
+    "COPD": 0.00048431227914989
+  },
+  "final_disease_prediction": "Normal",
+  "reason": "7/7 segments normal and normal prob is highest."
+}

@@ -1,0 +1,121 @@
+{
+  "wav": "C:\\Users\\tosaw\\Music\\PQ11\\ICBHI_final_database\\101_1b1_Al_sc_Meditron.wav",
+  "device": "cuda",
+  "segment_seconds": 5.0,
+  "segment_hop_seconds": 2.5,
+  "num_segments": 7,
+  "final_pred_id": 0,
+  "final_pred_name": "normal",
+  "reason": "No consistent abnormal segments detected; defaulting to normal.",
+  "segment_pred_counts": {
+    "normal": 7,
+    "crackles": 0,
+    "wheezes": 0,
+    "both": 0
+  },
+  "segment_pred_share": {
+    "normal": 1.0,
+    "crackles": 0.0,
+    "wheezes": 0.0,
+    "both": 0.0
+  },
+  "mean_prob_per_class": {
+    "normal": 0.6368757486343384,
+    "crackles": 0.33447474241256714,
+    "wheezes": 0.01896323636174202,
+    "both": 0.009686245582997799
+  },
+  "segments": [
+    {
+      "segment_index": 0,
+      "start_sec": 0.0,
+      "end_sec": 5.0,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.670544445514679,
+        "crackles": 0.30199775099754333,
+        "wheezes": 0.01879451610147953,
+        "both": 0.008663312532007694
+      }
+    },
+    {
+      "segment_index": 1,
+      "start_sec": 2.5,
+      "end_sec": 7.5,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.5991747379302979,
+        "crackles": 0.36647382378578186,
+        "wheezes": 0.021845370531082153,
+        "both": 0.012506083585321903
+      }
+    },
+    {
+      "segment_index": 2,
+      "start_sec": 5.0,
+      "end_sec": 10.0,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.6367849111557007,
+        "crackles": 0.327506422996521,
+        "wheezes": 0.02329377643764019,
+        "both": 0.012414896860718727
+      }
+    },
+    {
+      "segment_index": 3,
+      "start_sec": 7.5,
+      "end_sec": 12.5,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.6310509443283081,
+        "crackles": 0.33405613899230957,
+        "wheezes": 0.023018429055809975,
+        "both": 0.011874533258378506
+      }
+    },
+    {
+      "segment_index": 4,
+      "start_sec": 10.0,
+      "end_sec": 15.0,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.6585981845855713,
+        "crackles": 0.3213197588920593,
+        "wheezes": 0.013864099979400635,
+        "both": 0.0062179407104849815
+      }
+    },
+    {
+      "segment_index": 5,
+      "start_sec": 12.5,
+      "end_sec": 17.5,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.6036673188209534,
+        "crackles": 0.37494441866874695,
+        "wheezes": 0.013889134861528873,
+        "both": 0.007499138358980417
+      }
+    },
+    {
+      "segment_index": 6,
+      "start_sec": 15.0,
+      "end_sec": 20.0,
+      "pred_id": 0,
+      "pred_name": "normal",
+      "probs": {
+        "normal": 0.6583099365234375,
+        "crackles": 0.3150249123573303,
+        "wheezes": 0.01803733967244625,
+        "both": 0.008627808652818203
+      }
+    }
+  ]
+}
