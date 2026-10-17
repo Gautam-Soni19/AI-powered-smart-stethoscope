@@ -1,0 +1,49 @@
+#include <Arduino.h>
+
+// ================= MIC CONFIG =================
+const int MIC_PIN = 34;      // MAX9814 OUT -> GPIO34
+
+// ================= RECORD CONFIG =================
+const int FS = 8000;         // Sampling rate: 8 kHz
+const int RECORD_SEC = 3;    // Record duration: 3 seconds
+const int N = FS * RECORD_SEC;
+
+uint16_t samples[N];
+
+void setup() {
+  Serial.begin(115200);
+  delay(500);
+
+  // ADC configuration
+  analogReadResolution(12);        // 0–4095
+  analogSetAttenuation(ADC_11db);  // Full input range
+
+  Serial.println("READY");
+  Serial.println("Send 'R' to record lung sound");
+}
+
+void recordAndSend() {
+  Serial.println("START");
+
+  for (int i = 0; i < N; i++) {
+    samples[i] = analogRead(MIC_PIN);
+    delayMicroseconds(1000000 / FS);
+  }
+
+  Serial.println("END");
+
+  for (int i = 0; i < N; i++) {
+    Serial.println(samples[i]);
+  }
+
+  Serial.println("DONE");
+}
+
+void loop() {
+  if (Serial.available()) {
+    char c = Serial.read();
+    if (c == 'R' || c == 'r') {
+      recordAndSend();
+    }
+  }
+}
